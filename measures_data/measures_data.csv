@@ -1,0 +1,3 @@
+date,hour,id_machine,temp,hum,direction,velocity
+2021/08/20,21:07:28,1,12,10,N,21
+2021/08/20,21:07:07,1,10,11,N,20
