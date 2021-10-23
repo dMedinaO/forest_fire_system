@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poner título aquí</title>
+
+    <!--STYLESHEET-->
+    <!--=================================================-->
+
+    <!--Open Sans Font [ OPTIONAL ]-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="src/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="src/css/nifty.min.css" rel="stylesheet">
+
+    <!--DataTables [ OPTIONAL ]-->
+    <link href="src/plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
+	<link href="src/plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">
+    
+    <!--JSTree [ OPTIONAL ]-->
+    <link href="src/plugins/jstree/themes/default/style.min.css" rel="stylesheet">
+
+    <!--JAVASCRIPT-->
+    <!--=================================================-->
+
+    <!--Pace - Page Load Progress Par [OPTIONAL]-->
+    <link href="src/plugins/pace/pace.min.css" rel="stylesheet">
+    <script src="src/plugins/pace/pace.min.js"></script>
+
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="src/js/jquery.min.js"></script>
+
+
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="src/js/bootstrap.min.js"></script>
+
+
+    <!--NiftyJS [ RECOMMENDED ]-->
+    <script src="src/js/nifty.min.js"></script>
+
+
+    <!--=================================================-->
+
+    <!--JSTree [ OPTIONAL ]-->
+    <script src="src/plugins/jstree/jstree.min.js"></script>
+
+    <!--DataTables [ OPTIONAL ]-->
+    <script src="src/plugins/datatables/media/js/jquery.dataTables.js"></script>
+    <script src="src/plugins/datatables/media/js/dataTables.bootstrap.js"></script>
+    <script src="src/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+
+    <!--Font Awesome [ OPTIONAL ]-->
+    <link href="src/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!--Ion Icons [ OPTIONAL ]-->
+    <link href="src/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <!--Ion Icons [ OPTIONAL ]-->
+    <link href="src/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <!--Themify Icons [ OPTIONAL ]-->
+    <link href="src/plugins/themify-icons/themify-icons.min.css" rel="stylesheet">
+
+    <!-- para los higcharts-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+
+    <!--
+    <script src="controllers/"></script>
+    -->
+
+</head>
+
+<!--TIPS-->
+<!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
+<body>
+    <div id="container" class="effect aside-float aside-bright mainnav-lg">
+
+        <!--NAVBAR-->
+        <!--===================================================-->
+        <header id="navbar">
+            <div id="navbar-container" class="boxed">
+
+                <!--Brand logo & name-->
+                <!--================================-->
+                <div class="navbar-header">
+                    <a href="" class="navbar-brand">
+                        <img src="src/img/logo.png" alt="Nifty Logo" class="brand-icon">
+                        <div class="brand-title">
+                            <span class="brand-text">Dashboard</span>
+                        </div>
+                    </a>
+                </div>
+                <!--================================-->
+                <!--End brand logo & name-->
+
+
+                <!--Navbar Dropdown-->
+                <!--================================-->
+                <div class="navbar-content clearfix">
+                    <ul class="nav navbar-top-links pull-left">
+
+                        <!--Navigation toogle button-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li class="tgl-menu-btn">
+                            <a class="mainnav-toggle" href="#">
+                                <i class="demo-pli-list-view"></i>
+                            </a>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End Navigation toogle button-->
+
+                    </ul>
+                    <ul class="nav navbar-top-links pull-right">
+
+                        <!--User dropdown-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <li id="dropdown-user" class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+                                <span class="ic-user pull-right">
+                                    <!--<img class="img-circle img-user media-object" src="img/profile-photos/1.png" alt="Profile Picture">-->
+                                    <i class="demo-pli-male"></i>
+                                </span>
+                                <div class="username hidden-xs">Vista Configuración</div>
+                            </a>
+                        </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End user dropdown-->
+
+                    </ul>
+                </div>
+                <!--================================-->
+                <!--End Navbar Dropdown-->
+
+            </div>
+        </header>
+        <!--===================================================-->
+        <!--END NAVBAR-->
+
+        <div class="boxed">
+
+            <!--CONTENT CONTAINER-->
+            <!--===================================================-->
+            <div id="content-container">
+                <div id="page-head">
+
+                    <!--Page Title-->
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <div id="page-title">
+                        <h1 class="page-header text-overflow">Estadísticos relevantes</h1>
+
+                    </div>
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <!--End page title-->
+                </div>
+
+
+                <!--Page content-->
+                <!--===================================================-->
+                <div id="page-content">
+
+                  <div class="row">
+
+                    <div class="col-lg-3 col-md-3">
+                      <div class="panel media middle pad-all">
+                          <div class="media-left">
+                              <span class="icon-wrap icon-wrap-sm icon-circle bg-success">
+                              <i class="fa fa-file fa-2x"></i>
+                              </span>
+                          </div>
+                          <div class="media-body">
+                              <p class="text-2x mar-no text-semibold text-main panel1"></p>
+                              <p class="text-muted mar-no">Documentos Procesados</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                      <div class="panel media middle pad-all">
+                          <div class="media-left">
+                              <span class="icon-wrap icon-wrap-sm icon-circle bg-success">
+                              <i class="fa fa-car fa-2x"></i>
+                              </span>
+                          </div>
+                          <div class="media-body">
+                              <p class="text-2x mar-no text-semibold text-main panel2"></p>
+                              <p class="text-muted mar-no">Choferes</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                      <div class="panel media middle pad-all">
+                          <div class="media-left">
+                              <span class="icon-wrap icon-wrap-sm icon-circle bg-success">
+                              <i class="fa fa-map fa-2x"></i>
+                              </span>
+                          </div>
+                          <div class="media-body">
+                              <p class="text-2x mar-no text-semibold text-main panel3"></p>
+                              <p class="text-muted mar-no">Rutas Pendientes</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                      <div class="panel media middle pad-all">
+                          <div class="media-left">
+                              <span class="icon-wrap icon-wrap-sm icon-circle bg-success">
+                              <i class="fa fa-users fa-2x"></i>
+                              </span>
+                          </div>
+                          <div class="media-body">
+                              <p class="text-2x mar-no text-semibold text-main panel4"></p>
+                              <p class="text-muted mar-no">Clientes</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Documentos por Fecha</h3>
+                </div>
+                <div class="panel-body">
+                  <div id="docsByDate">
+
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Rutas por estado</h3>
+                </div>
+                <div class="panel-body">
+                  <div id="rutasEstado">
+
+                  </div>
+                </div>
+               </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Rutas por chofer</h3>
+                </div>
+                <div class="panel-body">
+                  <div id="rutasByChofer">
+
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+                </div>
+                <!--===================================================-->
+                <!--End page content-->
+      </div>
+            <!--===================================================-->
+            <!--END CONTENT CONTAINER-->
+
+
+
+
+
+
+            <!--MAIN NAVIGATION-->
+            <!--===================================================-->
+            <nav id="mainnav-container">
+                <div id="mainnav">
+
+                    <!--Menu-->
+                    <!--================================-->
+                    <div id="mainnav-menu-wrap">
+                        <div class="nano">
+                            <div class="nano-content">
+
+                                <!--Profile Widget-->
+                                <!--================================-->
+                                <div id="mainnav-profile" class="mainnav-profile">
+                                    <div class="profile-wrap text-center">
+                                        <div class="pad-btm">
+                                            <img class="img-circle img-md" src="src/img/profile-photos/11.png" alt="Profile Picture">
+                                        </div>
+                                        <a href="#profile-nav" class="box-block" data-toggle="collapse" aria-expanded="false">
+                                            
+                                            <p class="mnp-name">Vista Configuración</p>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <ul id="mainnav-menu" class="list-group">
+
+                                  <li class="list-header">Usuarios y Notificaciones</li>
+
+                                  <li>
+                                    <a href="users/">
+                                        <i class="fa fa-users"></i>
+                                        <span class="menu-title">Usuarios</span><i class="arrow"></i>
+                                    </a>
+
+                                  </li>
+
+                                  <li class="list-header">Configuraciones</li>                                  
+
+                                  <li>
+                                    <a href="alertas_config/">
+                                        <i class="fa fa-danger"></i>
+                                        <span class="menu-title">Configuración de Alertas</span><i class="arrow"></i>
+                                    </a>
+
+                                  </li>
+
+						        </ul>
+
+                    <!--================================-->
+                    <!--End menu-->
+
+                </div>
+            </nav>
+            <!--===================================================-->
+            <!--END MAIN NAVIGATION-->
+
+        </div>
+
+
+
+        <!-- FOOTER -->
+        <!--===================================================-->
+        <footer id="footer">
+
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <p class="pad-lft">&#0169; 2021 David Medina Ortiz, david.medina@cebib.cl</p>
+
+
+
+        </footer>
+        <!--===================================================-->
+        <!-- END FOOTER -->
+
+
+        <!-- SCROLL PAGE BUTTON -->
+        <!--===================================================-->
+        <button class="scroll-top btn">
+            <i class="pci-chevron chevron-up"></i>
+        </button>
+        <!--===================================================-->
+
+
+
+    </div>
+    <!--===================================================-->
+    <!-- END OF CONTAINER -->
+
+</body>
+</html>
